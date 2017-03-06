@@ -9,6 +9,10 @@
 	  <link href='https://fonts.googleapis.com/css?family=Meie+Script|Molle:400italic' rel='stylesheet' type='text/css'>
 	  <link rel="stylesheet" href="css/main.css">
 	  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	  
+	  <script src="js/appcartoon.js" async></script>
+	  <script src="js/MainController.js" async></script>
 	  <!-- <script src="js/jquery-3.1.1.js"></script> -->
 	  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 	 <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -16,30 +20,28 @@
 	
 
 </head>
-<body>
+<body ng-app="myApp" ng-cloak>
 <header>
 	<h1>Miri's favourite cartoons</h1>
 </header>
-
+<div id="wrapper" ng-controller="MainController">
 
 	<ul class="gallery" >
-		<li><img src="img/1_1986.jpg"  alt="Refferal Machine By Matthew Spiel">
-					
-			
+		<li><img ng-src="{{cartoons[0].imageprev}}" alt="Cartoon0">			
 		</li>
 			
 			
 			
-		<li><img src="img/3_1988.jpg"  alt="Space Juice by Mat Helme">
-			<div><p>Это подпись под второй фотографией</div>
+		<li><img ng-src="{{cartoons[1].imageprev}}" alt="Cartoon1">
+			
 		</li>
 		
-		<li><img src="img/pict1.jpg"  alt="Education by Chris Michel">
-			<div>Это подпись под третьей фотографией</div>
+		<li><img ng-src="{{cartoons[2].imageprev}}" alt="Cartoon2">
+			
 		</li>
-		<li><img src="img/11_1995.jpg"  alt="Wanted: Copy McRepeatsalot by Chris Michel"></li>
-		<li><img src="img/pict5.jpg"  alt="Sebastian by Mat Helme"></li>
-		<li><img src="img/pict3.jpg"  alt="Skill Polish by Chris Michel"></li>
+		<li><img ng-src="{{cartoons[3].imageprev}}" alt="Cartoon3"></li>
+		<li><img ng-src="{{cartoons[4].imageprev}}" alt="Cartoon4"></li>
+		<li><img ng-src="{{cartoons[5].imageprev}}" alt="Cartoon5"></li>
 		
 	</ul>
 	
@@ -51,7 +53,7 @@
 		<img>
 		<div></div>
 	</div>
-	
+</div>	
 </body>
 </html>
 
