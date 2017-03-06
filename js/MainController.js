@@ -2,10 +2,22 @@
 
 app.controller('MainController', ['$scope', function($scope) { 
   
-  $scope.blog1 = function (valueToAdd) {
-	  console.log("clicked blog1");
-	  $scope.projview = $scope.projects[0]; 
-   }
+  $scope.over = function (clickId) {
+	  	  
+	  console.log("catroon clicked "+clickId);
+	   
+	  
+	  console.log("image")
+	  
+	  $scope.overview = $scope.cartoons[clickId];
+	  console.log($scope.overview); 
+	  
+	  };
+
+	  
+  
+  
+  
   
    $scope.blog2 = function (valueToAdd) {
 	  console.log("clicked blog2");
@@ -26,50 +38,57 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.cartoons = 
    [ 
       { 
+	    clickId:0,
 	    imageprev: 'img/pict1.jpg',
-        name: 'First project',
-		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
+        title: 'First project',
+		linkto: '<iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" width="480"></iframe>'
       }, 
      { 
+	    clickId:1,
         imageprev: 'img/pict2.jpg',
-        name: 'First project',
+        title: 'Второй проект',
 		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp' 
       } ,
    	  { 
+	    clickId:2,
         imageprev: 'img/pict3.jpg',
-        name: 'First project',
+        title: 'Третий проект',
 		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
       }, 
      { 
+	    clickId:3,
         imageprev: 'img/pict4.jpg',
-        name: 'First project',
+        title: 'Четвертый проект',
 		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
       },
 		{ 
+	    clickId:4,
         imageprev: 'img/pict5.jpg',
-        name: 'First project',
+        title: 'Пятый проект',
 		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
       } ,
 		{ 
+	    clickId:5,
         imageprev: 'img/pict6.jpg',
-        name: 'First project',
+        title: 'Шестой проект',
 		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
       } 	  
     ];
 	
-	/* $scope.projview = $scope.projects[3]; */
+	
+   
   
   
    
-function blogpost(){
+/* function blogpost(){
 var i;
 for (i = 0; i < projects.length; i++) {
-	if(projects[i].name=="Forth project"){
+	if(projects[i].title:=="Forth project"){
 	  var unit = projects[i];
   }
 }
 return unit;
-}
+} */
  
 
 
@@ -80,10 +99,10 @@ console.log('end of MainController definition')
 
 /* Выводит список в обратном порядке
 
-<div ng-init="names=['Jani','Hege','Kai']">
+<div ng-init="title:s=['Jani','Hege','Kai']">
   <p>Looping with ng-repeat:</p>
   <ul>
-    <li ng-repeat="x in names | orderBy: 'created_at':true ">
+    <li ng-repeat="x in title:s | orderBy: 'created_at':true ">
       {{ x }}
     </li>
   </ul>

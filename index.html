@@ -21,27 +21,15 @@
 
 </head>
 <body ng-app="myApp" ng-cloak>
-<header>
-	<h1>Miri's favourite cartoons</h1>
-</header>
 <div id="wrapper" ng-controller="MainController">
+<header>
+	<h1 ng-click="over1()">Miri's favourite cartoons</h1>
+</header>
+
 
 	<ul class="gallery" >
-		<li ng-repeat="cartoon in cartoons"><img ng-src="{{cartoon.imageprev}}" alt="Cartoon0">			
+		<li ng-repeat="cartoon in cartoons" ><img ng-src="{{cartoon.imageprev}}" alt="Cartoon0"  ng-click="over(cartoon.clickId)">			
 		</li>
-		<!-- 	
-			
-			
-		<li><img ng-src="{{cartoons[1].imageprev}}" alt="Cartoon1">
-			
-		</li>
-		
-		<li><img ng-src="{{cartoons[2].imageprev}}" alt="Cartoon2">
-			
-		</li>
-		<li><img ng-src="{{cartoons[3].imageprev}}" alt="Cartoon3"></li>
-		<li><img ng-src="{{cartoons[4].imageprev}}" alt="Cartoon4"></li>
-		<li><img ng-src="{{cartoons[5].imageprev}}" alt="Cartoon5"></li> -->
 		
 	</ul>
 	
@@ -50,8 +38,9 @@
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	
 	<div id="overlay">
-		<img>
-		<div></div>
+		<h2>{{overview.title}}</h2>
+		<div>  
+		</div>
 	</div>
 </div>	
 </body>
