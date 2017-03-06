@@ -41,40 +41,40 @@ app.controller('MainController', ['$scope', function($scope) {
 	    clickId:0,
 	    imageprev: 'img/pict1.jpg',
         title: 'First project',
-		linkto: '<iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" width="480"></iframe>'
+		linkto: 'https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" '
       }, 
      { 
 	    clickId:1,
         imageprev: 'img/pict2.jpg',
         title: 'Второй проект',
-		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp' 
-      } ,
+		linkto: 'https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" '
+      }, 
    	  { 
 	    clickId:2,
         imageprev: 'img/pict3.jpg',
         title: 'Третий проект',
-		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
+		linkto: 'https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" '
       }, 
      { 
 	    clickId:3,
         imageprev: 'img/pict4.jpg',
         title: 'Четвертый проект',
-		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
-      },
+		linkto: 'https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" '
+      }, 
 		{ 
 	    clickId:4,
         imageprev: 'img/pict5.jpg',
         title: 'Пятый проект',
-		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
-      } ,
+		linkto: 'https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" '
+      }, 
 		{ 
 	    clickId:5,
         imageprev: 'img/pict6.jpg',
         title: 'Шестой проект',
-		linkto: 'https://www.w3schools.com/angular/angular_scopes.asp'
+		linkto: 'https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" '
       } 	  
     ];
-	
+	/* $scope.projview = $scope.cartoons[1] */
 	
    
   
@@ -94,6 +94,12 @@ return unit;
 
 console.log('end of MainController definition')  
   
+}]);        
+
+app.filter('trusted', ['$sce', function ($sce) {
+    return function(url) {
+        return $sce.trustAsResourceUrl(url);
+    };
 }]);
 
 

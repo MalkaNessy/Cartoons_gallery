@@ -38,8 +38,10 @@
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	
 	<div id="overlay">
-		<h2>{{overview.title}}</h2>
-		<div>  
+		
+		<div class="wrap">
+			<iframe allowfullscreen="" frameborder="0" height="270" ng-src="{{overview.linkto | trusted}}" width="480"></iframe>'
+		<h2>{{overview.title}}</h2> 
 		</div>
 	</div>
 </div>	
