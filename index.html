@@ -27,9 +27,9 @@
 <div id="wrapper" ng-controller="MainController">
 
 	<ul class="gallery" >
-		<li><img ng-src="{{cartoons[0].imageprev}}" alt="Cartoon0">			
+		<li ng-repeat="cartoon in cartoons"><img ng-src="{{cartoon.imageprev}}" alt="Cartoon0">			
 		</li>
-			
+		<!-- 	
 			
 			
 		<li><img ng-src="{{cartoons[1].imageprev}}" alt="Cartoon1">
@@ -41,7 +41,7 @@
 		</li>
 		<li><img ng-src="{{cartoons[3].imageprev}}" alt="Cartoon3"></li>
 		<li><img ng-src="{{cartoons[4].imageprev}}" alt="Cartoon4"></li>
-		<li><img ng-src="{{cartoons[5].imageprev}}" alt="Cartoon5"></li>
+		<li><img ng-src="{{cartoons[5].imageprev}}" alt="Cartoon5"></li> -->
 		
 	</ul>
 	
