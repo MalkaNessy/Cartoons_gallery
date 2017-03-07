@@ -59,8 +59,8 @@ ul li div{
  #overlay 
  ***********/
  
-#overlay {
-/*   background:rgba(0,0,0,0.7); */
+/* #overlay {
+/*   background:rgba(0,0,0,0.7); 
   background-color:#e5e1b2 ;
   width:100%;
   min-height:100%;
@@ -70,7 +70,7 @@ ul li div{
   left:0;
   display:none;
   text-align:center;
-}
+} */
 
 #overlay h5, h3 {
 	color: #c72c48 ;
@@ -114,17 +114,21 @@ ul li div{
 
 /**/
 
-#overlayfilm {
-/*   background:rgba(0,0,0,0.7); */
-  background-color:black ;
-  width:60%;
-  height: 500px;
-  
-  position:absolute;
+#overlayfilm, #overlay {
+	padding: 8px;
+	background:#db9da8 ;
+	border:6px double #c72c48  ;
+  /* width:500;
+  height: 500px; */
+   position: absolute;
+    left: 50%;
+    top: 50%;
+   transform: translate(-50%, -25%);
+   /* position:absolute;
   top:50%;
-  left:20%;
+  left:20%; */
   display:none;
-  text-align:center;
+  /* text-align:center; */
 }
 
 #overlayfilm h5, h3 {
@@ -145,12 +149,14 @@ ul li div{
 	border: 5px solid white;
 	background-color:white;
 	text-align: center;
-	margin: 0 auto;
+	
+	
+	/*margin: 0 auto;
 	margin-top: 4%;
 	padding-bottom: 10px;
-	max-width: 500px;
+	 max-width: 500px;
 	max-height: 500px;
-	/* width: 780px; */
+	width: 780px; */
 	/* position:absolute; */
 
 }

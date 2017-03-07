@@ -20,6 +20,11 @@ var $caption = $('<iframe allowfullscreen="" frameborder="0" height="270" src="h
 	});
 	
 	
+	/**/
+	
+	
+   
+
 
 	$("#film li").click(function(event){
 		console.log('click at app.js')

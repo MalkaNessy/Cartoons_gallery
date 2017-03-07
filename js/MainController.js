@@ -126,10 +126,10 @@ app.controller('MainController', ['$scope', function($scope) {
       }, 
      { 
 	    clickId:1,
-        imageprev: 'img/umizumi.jpg',
+        imageprev: 'img/home.jpg',
         title: 'Дом',
 		linkto: 'http://ok.ru/videoembed/234704734890 ',
-		ordinary_link:'http://mega-mult.ru/serii/330-komanda-umizumi.html' 	
+		ordinary_link:'http://gidonline.club/2015/03/dom-2015/' 	
 		
 				
       }
