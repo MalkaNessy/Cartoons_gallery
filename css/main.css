@@ -9,11 +9,14 @@ header {
 	margin-bottom: 20px;
 }
 
-h1, h2 {
+h1 {
 	color: #c72c48 ;
-	text-align: center
+	text-align: center;
 }
 
+/************
+ .gallery 
+ ***********/
 ul {
 	list-style:none;
 	margin: 0 auto;
@@ -52,22 +55,15 @@ ul li div{
 }
 
 
-
-
-/************
- .gallery 
- ***********/
-
- 
-
 /************
  #overlay 
  ***********/
+ 
 #overlay {
 /*   background:rgba(0,0,0,0.7); */
   background-color:#e5e1b2 ;
   width:100%;
-  height:100%;
+  min-height:100%;
   
   position:absolute;
   top:0;
@@ -76,36 +72,39 @@ ul li div{
   text-align:center;
 }
 
-#overlay h2 {
-	font-weight: 900px;
-	font-size: 16px;
+#overlay h5, h3 {
+	color: #c72c48 ;
+	text-align: left;
 	font-family: Verdana, sans-serif;
+	margin-left: 10px;
 	
 }
-
+#overlay h3 {
+	text-align: center;
+}
 #overlay img {
- margin-top: 8%;
- /* max-width: 780px;  */
- width: 300px;
+ 
 }
 
 .wrap {
 	border: 5px solid white;
+	background-color:white;
 	text-align: center;
 	margin: 0 auto;
-	padding: 0;
-	width: 500px;
-	height: 500px;
-	/* max-width: 780px; */
+	margin-top: 4%;
+	padding-bottom: 10px;
+	max-width: 500px;
+	max-height: 500px;
+	/* width: 780px; */
 	/* position:absolute; */
 
 }
 
-
-#overlay p{
+#overlay a{
 	text-align: center;
 	color: #c72c48 ;
 }
+
 
 #overlay .caption {
 	text-align: justify;
@@ -113,7 +112,59 @@ ul li div{
 }
 
 
+/**/
 
+#overlayfilm {
+/*   background:rgba(0,0,0,0.7); */
+  background-color:black ;
+  width:60%;
+  height: 500px;
+  
+  position:absolute;
+  top:50%;
+  left:20%;
+  display:none;
+  text-align:center;
+}
+
+#overlayfilm h5, h3 {
+	color: #c72c48 ;
+	text-align: left;
+	font-family: Verdana, sans-serif;
+	margin-left: 10px;
+	
+}
+#overlayfilm h3 {
+	text-align: center;
+}
+#overlayfilm img {
+ 
+}
+
+#overlayfilm .wrap {
+	border: 5px solid white;
+	background-color:white;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 4%;
+	padding-bottom: 10px;
+	max-width: 500px;
+	max-height: 500px;
+	/* width: 780px; */
+	/* position:absolute; */
+
+}
+
+#overlayfilm a{
+	text-align: center;
+	color: #c72c48 ;
+}
+
+
+#overlayfilm.caption {
+	text-align: justify;
+	/* display:none; */
+}
 
 
 

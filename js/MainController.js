@@ -14,27 +14,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	  
 	  };
 
-	  
-  
-  
-  
-  
-   $scope.blog2 = function (valueToAdd) {
-	  console.log("clicked blog2");
-	  $scope.projview = $scope.projects[1]; 
-   }
-   
-    $scope.blog3 = function (valueToAdd) {
-	  console.log("clicked blog3");
-	  $scope.projview = $scope.projects[2]
-   }
-   
-    $scope.blog4 = function (valueToAdd) {
-	  console.log("clicked blog4");
-	  $scope.projview = $scope.projects[3]
-   }
-  
-    
+	      
   $scope.cartoons = 
    [ 
       { 
@@ -91,10 +71,10 @@ app.controller('MainController', ['$scope', function($scope) {
 	  }, 
 		{ 
 	    clickId:7,
-        imageprev: 'img/fairy.jpg',
-        title: 'Феи',
-		linkto: 'https://www.youtube.com/embed/toDbHHi3b4E?list=PLhTis7xM6Xzr3u3TFQWfyJDsoGN_zd84e ',
-        ordinary_link:'http://mega-mult.ru/disney/fei/'
+        imageprev: 'img/luntik.jpg',
+        title: 'Лунтик',
+		linkto: 'https://www.youtube.com/embed/3Hz3kHRRISU?list=PLF40DD57434E48E66 ',
+        ordinary_link:'http://onlinemultfilmy.ru/luntik/'
 	   }, 
 		{ 
 	    clickId:8,
@@ -120,11 +100,41 @@ app.controller('MainController', ['$scope', function($scope) {
 		}    	  
     ];
 	/* $scope.projview = $scope.cartoons[1] */
-	
+	$scope.overview = $scope.cartoons[1]
    
+  $scope.overfilm = function (clickId) {
+	  	  
+	  console.log("catroon clicked "+clickId);
+	   
+	  
+	  console.log("image")
+	  
+	  $scope.overviewfilm = $scope.films[clickId];
+	  console.log($scope.overview); 
+	  
+	  };
   
   
-   
+  $scope.films = 
+   [ 
+      { 
+	    clickId:0,
+	    imageprev: 'img/fairy.jpg',
+        title: 'Феи',
+		linkto: 'http://50.7.161.138/stream/films/fei_1_din',
+		ordinary_link:'http://mega-mult.ru/disney/fei/74-multfilm-1-din.html' 	
+      }, 
+     { 
+	    clickId:1,
+        imageprev: 'img/umizumi.jpg',
+        title: 'Дом',
+		linkto: 'http://ok.ru/videoembed/234704734890 ',
+		ordinary_link:'http://mega-mult.ru/serii/330-komanda-umizumi.html' 	
+		
+				
+      }
+   ];
+   $scope.overviewfilm = $scope.films[1] 
 /* function blogpost(){
 var i;
 for (i = 0; i < projects.length; i++) {
