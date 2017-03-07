@@ -1,0 +1,140 @@
+@media screen and (max-width: 960px) {
+    body {
+        background-color: lightgreen;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 20%;
+	}
+}
+
+@media screen and (max-width: 830px) {
+    body {
+        background-color: lightgrey;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 17%;
+	}
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        background-color: lightgreen;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 13%;
+	}
+}
+
+@media screen and (max-width: 690px) {
+    body {
+        background-color: lightgrey;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 10%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        background-color: lightgreen;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 8%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background-color: lightgrey;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 7%;
+	}
+}
+
+@media screen and (max-width: 630px) {
+    body {
+        background-color: lightgrey;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 6%;
+	}
+}
+@media screen and (max-width: 620px) {
+    body {
+        background-color: lightgreen;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 5%;
+	}
+}
+
+@media screen and (max-width: 595px) {
+    body {
+        background-color: lightgrey;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 4%;
+	}
+}
+
+@media screen and (max-width: 585px) {
+    body {
+        background-color: lightgreen;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 3%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+    body {
+        background-color: lightgrey;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 2%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+    body {
+        background-color: lightgrey;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 1%;
+	}
+}
+
+@media screen and (max-width: 560px) {
+    iframe {
+        max-width: 400px;
+		max-height:190px;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 1%;
+	}
+}
+
+@media screen and (max-width: 460px) {
+    iframe {
+        width: 300px;
+		height:150px;
+    }
+	
+	#overlayfilm, #overlay {
+	left: 10%;
+	}
+}

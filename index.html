@@ -8,6 +8,7 @@
 	  <link href='https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
 	  <link href='https://fonts.googleapis.com/css?family=Meie+Script|Molle:400italic' rel='stylesheet' type='text/css'>
 	  <link rel="stylesheet" href="css/main.css">
+	  <link rel="stylesheet" href="css/responsive.css">
 	  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.js"></script>
 	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	  
@@ -43,7 +44,7 @@
 	
 	<div id="overlay" >
 		<div class="wrap">
-			<iframe allowfullscreen="" frameborder="0" height="270" ng-src="{{overview.linkto | trusted}}" width="480"></iframe>'
+			<iframe allowfullscreen="" frameborder="0"  ng-src="{{overview.linkto | trusted}}" ></iframe>'
 			<h5>{{overview.title}}</h5>
 			<a ng-href="{{overview.ordinary_link}}" target="_blank">Смотреть еще  </a>			
 		</div>
@@ -52,10 +53,11 @@
 	<div id="overlayfilm">
 			
 			<div class="wrap">
-				<iframe allowfullscreen="" frameborder="0" height="270" ng-src="{{overviewfilm.linkto | trusted}}" width="480"></iframe>'
+				<!-- <img src="img/closebtn.jpg" id="close" > -->
+				<div><img ng-src="{{overviewfilm.imageprev}}"  ></div>
 				<h5>{{overviewfilm.title}}</h5>
 				<a ng-href="{{overviewfilm.ordinary_link}}" target="_blank">Смотреть на сайте  </a>			
-			</div>
+			</div><!-- width="480" height="270" -->
 		</div>
 		
 </div>

@@ -121,15 +121,21 @@ app.controller('MainController', ['$scope', function($scope) {
 	    clickId:0,
 	    imageprev: 'img/fairy.jpg',
         title: 'Феи',
-		linkto: 'http://50.7.161.138/stream/films/fei_1_din',
 		ordinary_link:'http://mega-mult.ru/disney/fei/74-multfilm-1-din.html' 	
       }, 
      { 
 	    clickId:1,
         imageprev: 'img/home.jpg',
         title: 'Дом',
-		linkto: 'http://ok.ru/videoembed/234704734890 ',
 		ordinary_link:'http://gidonline.club/2015/03/dom-2015/' 	
+		
+				
+      },
+	  { 
+	    clickId:2,
+        imageprev: 'img/monstr.jpg',
+        title: 'Отель Трансельвания',
+		ordinary_link:'https://my-hit.org/film/20509/' 	
 		
 				
       }
