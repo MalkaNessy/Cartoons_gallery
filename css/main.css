@@ -114,22 +114,19 @@ ul li div{
 
 /**/
 
+
 #overlayfilm, #overlay {
 	padding: 8px;
 	background:#db9da8 ;
-	border:6px double #c72c48  ;
-  /* width:500;
-  height: 500px; */
-   position: absolute;
-    left: 50%;
-    top: 50%;
-   transform: translate(-50%, -25%);
-   /* position:absolute;
-  top:50%;
-  left:20%; */
-  display:none;
-  /* text-align:center; */
+	border:6px double #c72c48;
+	width:500;
+    height: 500px;
+	position: fixed;
+	left: 28%;
+    top: 10%;
+	display: none;
 }
+
 
 #overlayfilm h5, h3 {
 	color: #c72c48 ;

@@ -35,15 +35,6 @@
 	
 	<h3>Полнометражные мультфильмы <h3>
 	<ul class="gallery" id="film">
-		<div id="overlayfilm">
-			
-			<div class="wrap">
-				<iframe allowfullscreen="" frameborder="0" height="270" ng-src="{{overviewfilm.linkto | trusted}}" width="480"></iframe>'
-				<h5>{{overviewfilm.title}}</h5>
-				<a ng-href="{{overviewfilm.ordinary_link}}" target="_blank">Смотреть на сайте  </a>			
-			</div>
-		</div>
-	
 		<li ng-repeat="film in films| orderBy: 'created_at':true "   ><img ng-src="{{film.imageprev}}" alt="Film"  ng-click="overfilm(film.clickId)">			
 		</li>
 	</ul>	
@@ -51,7 +42,6 @@
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	
 	<div id="overlay" >
-		
 		<div class="wrap">
 			<iframe allowfullscreen="" frameborder="0" height="270" ng-src="{{overview.linkto | trusted}}" width="480"></iframe>'
 			<h5>{{overview.title}}</h5>
@@ -59,7 +49,15 @@
 		</div>
 	</div>
 	
-	
+	<div id="overlayfilm">
+			
+			<div class="wrap">
+				<iframe allowfullscreen="" frameborder="0" height="270" ng-src="{{overviewfilm.linkto | trusted}}" width="480"></iframe>'
+				<h5>{{overviewfilm.title}}</h5>
+				<a ng-href="{{overviewfilm.ordinary_link}}" target="_blank">Смотреть на сайте  </a>			
+			</div>
+		</div>
+		
 </div>
 
 
