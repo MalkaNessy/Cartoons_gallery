@@ -5,12 +5,12 @@ $(document).ready(function() {
  
 var $overlay = $("#overlay");
 /* var $image = $("#overlay img"); */
-/* var $div = $("#overlay div"); *//* */
-var $caption = $('<iframe allowfullscreen="" frameborder="0" height="270" src="https://www.youtube.com/embed/ySzbgdTEjlA?list=PLn7UD0nnd1CZu9_H0OSoQflQxEUfhiNBb" width="480"></iframe>');
- 	 
+/* var $div = $("#overlay div"); */ /* 
+var $caption = $('<iframe allowfullscreen="" frameborder="0" height="270" src="http://ok.ru/videoembed/234704734890" width="480"></iframe>');
+ 	   */
 	$(".gallery img").click(function(event){
 		console.log('click at app.js')
-		$overlay.append( $caption);
+		/* $overlay.append( $caption); */
 		$overlay.show();
 	});
 	
