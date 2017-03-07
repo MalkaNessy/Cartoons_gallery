@@ -27,14 +27,14 @@
 	<h1 ng-click="over1()">Miri's favourite cartoons</h1>
 </header>
 
-	<h3>Мультсериалы<h3>
+	<h3>Cartoon series<h3>
 	<ul class="gallery" id="serial">
 		<li ng-repeat="cartoon in cartoons| orderBy: 'created_at':true "><img ng-src="{{cartoon.imageprev}}" alt="Cartoon"  ng-click="over(cartoon.clickId)">			
 		</li>
 		
 	</ul>
 	
-	<h3>Полнометражные мультфильмы <h3>
+	<h3>Full-length cartoons <h3>
 	<ul class="gallery" id="film">
 		<li ng-repeat="film in films| orderBy: 'created_at':true "   ><img ng-src="{{film.imageprev}}" alt="Film"  ng-click="overfilm(film.clickId)">			
 		</li>

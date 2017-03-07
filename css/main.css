@@ -9,9 +9,10 @@ header {
 	margin-bottom: 20px;
 }
 
-h1 {
+h1, h3 {
 	color: #c72c48 ;
 	text-align: center;
+	font-family: Verdana, sans-serif;
 }
 
 /************
@@ -80,7 +81,7 @@ iframe {
     }
 
 
-#overlay h5, h3 {
+#overlay h5,#overlay h3 {
 	color: #c72c48 ;
 	text-align: left;
 	font-family: Verdana, sans-serif;
@@ -123,7 +124,7 @@ iframe {
  #overlayfilm 
  ***********/
 
-#overlayfilm h5, h3 {
+#overlayfilm h5,#overlayfilm h3 {
 	color: #c72c48 ;
 	text-align: left;
 	font-family: Verdana, sans-serif;
