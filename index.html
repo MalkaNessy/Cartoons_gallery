@@ -43,6 +43,7 @@
 	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	
 	<div id="overlay" >
+		<img src="img/closebtn.jpg" class="close" >
 		<div class="wrap">
 			<iframe allowfullscreen="" frameborder="0"  ng-src="{{overview.linkto | trusted}}" ></iframe>'
 			<h5>{{overview.title}}</h5>
@@ -51,9 +52,9 @@
 	</div>
 	
 	<div id="overlayfilm">
-			
+			<img src="img/closebtn.jpg" class="close" >
 			<div class="wrap">
-				<!-- <img src="img/closebtn.jpg" id="close" > -->
+				
 				<div><img ng-src="{{overviewfilm.imageprev}}"  ></div>
 				<h5>{{overviewfilm.title}}</h5>
 				<a ng-href="{{overviewfilm.ordinary_link}}" target="_blank">Смотреть на сайте  </a>			

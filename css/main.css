@@ -59,7 +59,7 @@ ul li div{
  #overlay 
  ***********/
  #overlayfilm, #overlay {
-	padding: 8px;
+	padding:0 8px 10px;
 	background:#db9da8 ;
 	border:6px double #c72c48;
 	width:500;
@@ -90,16 +90,15 @@ iframe {
 #overlay h3 {
 	text-align: center;
 }
-#overlay img {
- 
-}
+
 
 .wrap {
-	border: 5px solid white;
+	/* border: 5px solid white; */
 	background-color:white;
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 4%;
+	margin-top: 6%;
+	padding:8px;
 	padding-bottom: 10px;
 	max-width: 500px;
 	max-height: 500px;
@@ -144,18 +143,22 @@ iframe {
 	width: 480px;
 	height: 270px;
 } 
-#overlayfilm .wrap {
+/* #overlayfilm .wrap {
 	border: 5px solid white;
 	background-color:white;
 	text-align: center;
-}
+} */
 
 #overlayfilm a{
 	text-align: center;
 	color: #c72c48 ;
 }
 
-
+img.close {
+	width: 20px;
+	float: right;
+	padding: 2px;
+}
 #overlayfilm.caption {
 	text-align: justify;
 	/* display:none; */

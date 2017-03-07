@@ -5,27 +5,23 @@ $(document).ready(function() {
  
 var $overlay = $("#overlay");
 var $overlayfilm = $("#overlayfilm");
+var $close = $('.close');
 /* var $image = $("#overlay img"); */
 /* var $div = $("#overlay div"); */ /* 
 var $caption = $('<iframe allowfullscreen="" frameborder="0" height="270" src="http://ok.ru/videoembed/234704734890" width="480"></iframe>');
  	   */
-	$("#serial img").click(function(event){
+	$("#serial li").click(function(event){
 		console.log('click at app.js')
 		/* $overlay.append( $caption); */
 		$overlay.show();
 	});
 	
-	$overlay.click(function(){ 
+	$close.click(function(){ 
 		$overlay.hide();//Hide the overlay
 	});
 	
 	
-	/**/
 	
-	
-   
-
-
 	$("#film li").click(function(event){
 		console.log('click at app.js')
 		/* $overlay.append( $caption); */
@@ -33,7 +29,7 @@ var $caption = $('<iframe allowfullscreen="" frameborder="0" height="270" src="h
 		
 	});
 	
-	$overlayfilm.click(function(){ 
+	$close.click(function(){ 
 		$overlayfilm.hide();//Hide the overlay
 	});
 	
